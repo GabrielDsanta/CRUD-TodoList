@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Avançado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ConteinerMain">
+        <header class="HeaderTodo">
+            <h1>Todo Avançado</h1>
+        </header>
+
+        <form id="TodoForm" class="TodoForm">
+            <p>Adicione Sua Tarefa</p>
+
+            <div class="DivControl">
+                <input  id="TodoInput" type="text" placeholder="Oque você vai fazer ?">
+                <button type="submit"><i class="fa-thin fa-plus"></i></button>
+            </div>
+        </form>
+
+        <form id="HideDiv" class="Hide">
+            <p>Edite a sua tarefa:</p>
+            <div class="DivEditControl">
+                <input id="NewTask" type="text">
+                <button id="ConfirmEditBtn">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="CancelEditBtn" class="CancelEditBtn">Cancelar</button>
+        </form>
+
+        <div class="ToolBar">
+            <div class="Search">
+                <h4>Pesquisar:</h4>
+                <form action="">
+                    <input type="text">
+                    <button>
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="Filter">
+                <h4>Filtrar:</h4>
+                <select id="">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A Fazer</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="TodoList">
+            
+        </div>
+    </div>
+
+    <script src="../TodoList/js/script.js"></script>
+</body>
+</html>

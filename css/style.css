@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;;
+}
+
+body{
+    background-image: url(../img/2111.w030.n002.246B.p1.246.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button{
+    background: none;
+    border: solid 1px rgb(0, 0, 0, 70%);
+    color: rgb(0, 0, 0, 80%);
+    font-weight: 500;
+    padding: .7rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i{
+    pointer-events: none;
+}
+
+button:hover{
+    transition: .5s;
+    background: rgb(19, 68, 97);
+    color: #FFF;
+    border: solid 1px rgb(0, 0, 0, 0%);
+}
+
+input, select{
+    padding: .25rem .5rem;
+    outline: none;
+}
+
+.Hide{
+    display: none;
+}
+
+.ConteinerMain{
+    width: 450px;
+    background-color: #FFF;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: .7rem;
+}
+
+.HeaderTodo{
+    text-align: center;
+    color: rgb(29, 85, 168, 80%);
+    padding: 0 1rem 1rem;
+    border-bottom: solid 1px #CCC;
+    margin-bottom: 1rem;
+}
+
+.TodoForm, .EditForm{
+    border-bottom: solid 1px #CCC;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.DivControl, .DivEditControl{
+    display: flex;
+}
+
+.DivControl button, .DivEditControl button{
+    margin-left: .3rem;
+}
+
+.CancelEditBtn{
+    margin-top: 1rem;
+}
+
+.ToolBar{
+    border-bottom: solid 1px #CCC;
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+
+.ToolBar h4{
+    margin-bottom: .5rem;
+}
+
+.Search{
+    border-right: solid 1px #DDD;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Search form{
+    display: flex;
+}
+
+.Search input{
+    width: 100%;
+    margin-right: .3rem;
+}
+
+.Filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Filter select{
+    flex: 1;
+}
+
+
+.TodoList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: solid 1px #DDD;
+    transition: .3s;
+}
+
+.TodoList h3{
+    flex: 1;
+    font-size: 1rem;
+}
+
+.TodoList button{
+    margin-left: .4rem;
+}
+
+.done{
+    background-color: #395169;
+}
+
+.done h3{
+    color: #FFF;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.done button{
+    background-color: #FFF;
+}
+
+.done button:hover{
+    color: #172431;
+}
+
+
+
+
+
+
+
+
+
